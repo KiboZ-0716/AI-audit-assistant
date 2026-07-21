@@ -1,0 +1,83 @@
+import type { AuditProject } from '@/types/audit'
+
+/** 基于 BIP AI审核_0715_1.xlsx · 930上线项目 */
+export const mockAuditProjects: AuditProject[] = [
+  {
+    id: 'prj-liangjiang-paint-2026q2',
+    name: 'AUD-2026Q2-两江-涂装-002',
+    period: '2026 Q2',
+    plant: '两江工厂',
+    area: '过程（车间）',
+    scopeSummary: '质量数据采集 · 已选 3 个子要素',
+    owner: '李强',
+    status: 'ai_running',
+    progress: {
+      percent: 55,
+      label: 'AI 审核中：标准匹配（2/3）',
+    },
+    updatedAt: '2026-07-21 09:18',
+  },
+  {
+    id: 'prj-parts-quality-2026q2',
+    name: 'AUD-2026Q2-零部件-001',
+    period: '2026 Q2',
+    plant: '渝北工厂',
+    area: '零部件',
+    scopeSummary: '质量数据采集 · 已选 2 个子要素',
+    owner: '吴思源',
+    status: 'configuring',
+    progress: {
+      percent: 40,
+      label: '已配置 1/2 个子要素数据源',
+    },
+    updatedAt: '2026-07-20 16:40',
+  },
+  {
+    id: 'prj-process-issue-2026q2',
+    name: 'AUD-2026Q2-过程-003',
+    period: '2026 Q2',
+    plant: '龙兴工厂',
+    area: '过程（车间）',
+    scopeSummary: '过程问题管理 · 已选 3 个子要素',
+    owner: '杨锐',
+    status: 'pending_review',
+    progress: {
+      percent: 78,
+      label: 'AI 已完成，待人工复审问题 4 项',
+    },
+    updatedAt: '2026-07-19 14:05',
+    issueCount: 4,
+  },
+  {
+    id: 'prj-function-improve-2026q2',
+    name: 'AUD-2026Q2-职能-004',
+    period: '2026 Q2',
+    plant: '新动力工厂',
+    area: '职能',
+    scopeSummary: '质量改进 · 已选 2 个子要素',
+    owner: '白莲',
+    status: 'report_ready',
+    progress: {
+      percent: 100,
+      label: '报告已生成，可在报告中心下载',
+    },
+    updatedAt: '2026-07-18 11:20',
+    issueCount: 3,
+  },
+  {
+    id: 'prj-parts-supplier-2026q2',
+    name: 'AUD-2026Q2-零部件-005',
+    period: '2026 Q2',
+    plant: 'KD工厂',
+    area: '零部件',
+    scopeSummary: '供应商会议 · 已选 1 个子要素',
+    owner: '谭袁龙',
+    status: 'pending_review',
+    progress: {
+      percent: 72,
+      label: '待人工复审，含现场取证证据 1 项',
+    },
+    updatedAt: '2026-07-17 17:32',
+    issueCount: 2,
+  },
+]
